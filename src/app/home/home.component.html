@@ -1,0 +1,13 @@
+<div class="col-lg-6 col-md-8 mx-auto text-center mt-4">
+    <h1 class="fw-light">Angular Final Proyect</h1>
+    <p class="lead text-muted">Click in one of the next options to access to the Trending Gifs or Stickers.</p>
+
+</div>
+<div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-4">
+        <app-card [Image]="'assets/home-gif-img.gif'" [Type]="'Gifs'" [Title]="'Trending Gifs'" CardLink="/gifs" class="col col-md-4 offset-md-2"></app-card>
+        <app-card [Image]="'assets/home-sticker-img.gif'" [Type]="'Stickers'" [Title]="'Trending Stickers'" CardLink="/stickers" class="col col-md-4"></app-card>
+      </div>
+    </div>
+</div>
