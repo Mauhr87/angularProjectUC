@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-stickers',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./stickers.component.css']
 })
 export class StickersComponent implements OnInit {
+  stickers: any[] = [];
 
-  constructor() { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
+    this.dataService.getTrendingStickers()
+      .subscribe((response: any) => {
+        this.stickers = response.data;
+      })
   }
 
 }
