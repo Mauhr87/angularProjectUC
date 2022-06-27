@@ -1,0 +1,15 @@
+
+<header class="bg-dark">
+    <div class="container d-flex flex-wrap justify-content-center py-3 mb-4">
+        <a [routerLink]="['home']" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <span class="fs-4 text-white">Proyecto Final</span>
+        </a>
+
+        <ul class="nav nav-pills">
+        <li [routerLinkActive]="['active']" class="nav-item"><a [routerLink]="['home']" class="nav-link" aria-current="page">Home</a></li>
+        <li [routerLinkActive]="['active']" class="nav-item"><a [routerLink]="['gifs']" class="nav-link">Trending Gifs</a></li>
+        <li [routerLinkActive]="['active']" class="nav-item"><a [routerLink]="['stickers']" class="nav-link">Trending Stickers</a></li>
+        </ul>
+    </div>
+</header>
+
