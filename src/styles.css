@@ -2,3 +2,7 @@
 :host{
     display: flex;
 }
+
+body{
+    background-color: #f3f3f3;
+}

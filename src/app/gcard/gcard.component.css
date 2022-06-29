@@ -1,13 +1,11 @@
+.text-purple{
+    color: #9200f5;
+}
+
 .card{
     display: flex;
     justify-content: space-between;
     background: #c5c5c5;
-}
-
-.card > a{
-    display: flex;
-    align-items: center;
-    height: 100%;
 }
 
 .card-body{

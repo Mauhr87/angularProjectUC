@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CardComponent } from './card/card.component';
 
 import { HttpClientModule} from "@angular/common/http";
+import { GcardComponent } from './gcard/gcard.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HttpClientModule} from "@angular/common/http";
     StickersComponent,
     NavbarComponent,
     FooterComponent,
-    CardComponent
+    CardComponent,
+    GcardComponent
   ],
   imports: [
     BrowserModule,
