@@ -1,3 +1,22 @@
+.card{
+    display: flex;
+    justify-content: space-between;
+    background: #c5c5c5;
+}
+
+.card > a{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.card-body{
+    flex: 0;
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
+}
+
+
 .card-body a{
     background-color: #9200f5;
 }

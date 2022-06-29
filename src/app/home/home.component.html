@@ -6,12 +6,12 @@
 <div class="album py-5">
     <div class="container">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-4">
-        <span *ngIf="gifs[0]" class="col col-md-4 offset-md-2">
+        <div *ngIf="gifs[0]" class="col col-md-4 offset-md-2">
           <app-card [Image]="gifs[0].images.downsized_large.url" [Type]="'Gifs'" [Title]="'Trending Gifs'" CardLink="/gifs"></app-card>
-        </span>
-        <span *ngIf="stickers[0]" class="col col-md-4">
+        </div>
+        <div *ngIf="stickers[0]" class="col col-md-4">
           <app-card [Image]="stickers[0].images.downsized_large.url" [Type]="'Stickers'" [Title]="'Trending Stickers'" CardLink="/stickers"></app-card>
-        </span>
+        </div>
       </div>
     </div>
 </div>
